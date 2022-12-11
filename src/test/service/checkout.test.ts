@@ -46,7 +46,7 @@ describe('Checkout service standard tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(987.97)
+        expect(total).toBe('987.97')
     })
 
     it('should test scrnario 2 for SecondBite user', async () => {
@@ -58,7 +58,7 @@ describe('Checkout service standard tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(934.97)
+        expect(total).toBe('934.97')
     })
 
     it('should test scrnario 3 for Axil Coffee Roasters user', async () => {
@@ -70,7 +70,7 @@ describe('Checkout service standard tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(1294.96)
+        expect(total).toBe('1294.96')
     })
 })
 
@@ -134,7 +134,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(300)
+        expect(total).toBe('300.00')
     })
 
     it('should test custom offer 2', async () => {
@@ -145,7 +145,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(750)
+        expect(total).toBe('750.00')
     })
 
     it('should test custom offer 3', async () => {
@@ -156,7 +156,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(800)
+        expect(total).toBe('800.00')
     })
 
     it('should test custom offer 4', async () => {
@@ -167,7 +167,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(200)
+        expect(total).toBe('200.00')
     })
 
     it('should test custom offer 5', async () => {
@@ -178,7 +178,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(750)
+        expect(total).toBe('750.00')
     })
 
     it('should test custom offer 6', async () => {
@@ -189,7 +189,7 @@ describe('Checkout service additional tests', () => {
 
         const total = co.total()
 
-        expect(total).toBe(1350)
+        expect(total).toBe('1350.00')
     })
 })
 

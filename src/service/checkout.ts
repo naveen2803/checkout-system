@@ -60,7 +60,7 @@ class Checkout {
                 }
             }
         })
-        return this.totalPrice;
+        return this.totalPrice.toFixed(2);
     }
 }
 

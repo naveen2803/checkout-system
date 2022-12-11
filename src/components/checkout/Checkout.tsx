@@ -10,7 +10,7 @@ const Checkout = () => {
     const [selectedUserId, setSelectedUserId] = useState(1)
     const [itemsInCart, setItemsInCart] = useState<CartItem[]>([])
     const [productInputs, setProductInputs] = useState<CartItem[]>([])
-    const [total, setTotal] = useState(0)
+    const [total, setTotal] = useState('')
     const [checkoutDone, setCheckoutDone] = useState(false)
     
     const productNames = new Map();
@@ -109,7 +109,7 @@ const Checkout = () => {
     const onReset = () => {
         setItemsInCart([])
         setProductInputs([])
-        setTotal(0);
+        setTotal('');
         setCheckoutDone(false)
     }
 
@@ -229,7 +229,7 @@ const Checkout = () => {
                         </Row>
                     )
                 })}
-                <Row><Col><span className="subHeading">Total: {total === 0 ? '' : `$${total}`}</span></Col></Row>
+                <Row><Col><span className="subHeading">Total: {total === '' ? '' : `$${total}`}</span></Col></Row>
             </Container>
         </div>
     )
